@@ -1,0 +1,478 @@
+.data-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.data-features {
+  width: 100%;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  padding-top: var(--dl-space-space-fiveunits);
+  padding-left: var(--dl-space-space-sevenunits);
+  padding-right: var(--dl-space-space-sevenunits);
+  flex-direction: column;
+  background-color: #71b4c1;
+}
+.data-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.data-text {
+  font-size: 56px;
+  font-style: normal;
+  margin-top: var(--dl-space-space-threeunits);
+  text-align: center;
+  font-weight: 700;
+  line-height: 72px;
+  margin-bottom: var(--dl-space-space-fiveunits);
+}
+.data-container1 {
+  width: 100%;
+  height: 807px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #facccc;
+}
+.data-pasted-image {
+  top: 223px;
+  right: -2px;
+  width: 463px;
+  height: 379px;
+  margin: auto;
+  position: absolute;
+}
+.data-publish {
+  top: 40px;
+  left: 37px;
+  width: 524px;
+  height: 726px;
+  position: absolute;
+}
+.data-icon {
+  fill: #D9D9D9;
+  width: 85px;
+  height: 85px;
+  align-self: center;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.data-text01 {
+  font-size: 28px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.data-text02 {
+  line-height: 24px;
+}
+.data-text03 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text04 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text05 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text06 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text07 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text08 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text09 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text10 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text11 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text12 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text13 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text14 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text15 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text16 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text17 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text18 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text19 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text20 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text21 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text22 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text23 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text24 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text25 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text26 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text27 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text28 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text29 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text30 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-text31 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.data-container2 {
+  width: 100%;
+  height: 807px;
+  display: flex;
+  position: relative;
+  margin-top: var(--dl-space-space-fiveunits);
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #3C674D;
+}
+.data-publish1 {
+  right: 37px;
+  width: 524px;
+  bottom: 40px;
+  height: 726px;
+  position: absolute;
+}
+.data-icon2 {
+  width: 65px;
+  height: 65px;
+  align-self: center;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.data-text33 {
+  font-size: 28px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.data-text34 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.data-text35 {
+  line-height: 30px;
+}
+.data-text36 {
+  line-height: 30px;
+}
+.data-text37 {
+  line-height: 30px;
+}
+.data-text38 {
+  line-height: 30px;
+}
+.data-text39 {
+  line-height: 30px;
+}
+.data-text40 {
+  line-height: 30px;
+}
+.data-text41 {
+  line-height: 30px;
+}
+.data-text42 {
+  line-height: 30px;
+}
+.data-text43 {
+  line-height: 30px;
+}
+.data-text44 {
+  line-height: 30px;
+}
+.data-text45 {
+  line-height: 30px;
+}
+.data-text46 {
+  line-height: 30px;
+}
+.data-text47 {
+  line-height: 30px;
+}
+.data-text48 {
+  line-height: 30px;
+}
+.data-text49 {
+  line-height: 30px;
+}
+.data-text50 {
+  line-height: 30px;
+}
+.data-text51 {
+  line-height: 30px;
+}
+.data-text52 {
+  line-height: 30px;
+}
+.data-text53 {
+  line-height: 30px;
+}
+.data-text54 {
+  line-height: 30px;
+}
+.data-text55 {
+  line-height: 30px;
+}
+.data-text56 {
+  line-height: 30px;
+}
+.data-text57 {
+  line-height: 30px;
+}
+.data-text58 {
+  line-height: 30px;
+}
+.data-text59 {
+  line-height: 30px;
+}
+.data-text60 {
+  line-height: 30px;
+}
+.data-text61 {
+  line-height: 30px;
+}
+.data-text62 {
+  line-height: 30px;
+}
+.data-text63 {
+  line-height: 30px;
+}
+.data-pasted-image1 {
+  top: 88px;
+  left: 31px;
+  width: 417px;
+  height: 641px;
+  position: absolute;
+}
+.data-container3 {
+  width: 100%;
+  height: 527px;
+  display: flex;
+  position: relative;
+  margin-top: var(--dl-space-space-fiveunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-sevenunits);
+  flex-direction: row;
+  justify-content: center;
+  background-color: #676D79;
+}
+.data-pasted-image2 {
+  top: 36px;
+  right: 86px;
+  width: 320px;
+  height: 433px;
+  position: absolute;
+}
+.data-publish2 {
+  top: 38px;
+  left: 30px;
+  width: 524px;
+  height: 442px;
+  position: absolute;
+}
+.data-icon4 {
+  width: 65px;
+  height: 65px;
+  align-self: center;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.data-text65 {
+  font-size: 28px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.data-text66 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+}
+@media(max-width: 991px) {
+  .data-features {
+    padding-top: 260px;
+  }
+  .data-title {
+    width: 100%;
+    max-width: 1200px;
+  }
+  .data-text {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .data-text02 {
+    line-height: 21px;
+  }
+  .data-text03 {
+    line-height: 21px;
+  }
+  .data-text34 {
+    line-height: 21px;
+  }
+  .data-text35 {
+    line-height: 21px;
+  }
+  .data-text66 {
+    line-height: 21px;
+  }
+}
+@media(max-width: 767px) {
+  .data-features {
+    padding-top: 350px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .data-text {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .data-publish {
+    margin-left: 0px;
+  }
+  .data-text01 {
+    font-size: 24px;
+  }
+  .data-text02 {
+    font-size: 14px;
+  }
+  .data-text03 {
+    font-size: 14px;
+  }
+  .data-publish1 {
+    margin-left: 0px;
+  }
+  .data-text33 {
+    font-size: 24px;
+  }
+  .data-text34 {
+    font-size: 14px;
+  }
+  .data-text35 {
+    font-size: 14px;
+  }
+  .data-publish2 {
+    margin-left: 0px;
+  }
+  .data-text65 {
+    font-size: 24px;
+  }
+  .data-text66 {
+    font-size: 14px;
+  }
+}
+@media(max-width: 479px) {
+  .data-features {
+    padding-top: 200px;
+  }
+}
