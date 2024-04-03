@@ -28,6 +28,8 @@ const Data = (props) => {
             <svg viewBox="0 0 1024 1024" className="data-icon">
               <path d="M512 598q108 0 225 47t117 123v86h-684v-86q0-76 117-123t225-47zM512 512q-70 0-120-50t-50-120 50-121 120-51 120 51 50 121-50 120-120 50z"></path>
             </svg>
+            //NOTE FOR NITYA: this is the most listened to artists section
+            //put the songs next to the numbers (1., 2., 3., etc)
             <span className="data-text01">Most Listened to Artists</span>
             <span className="data-text02">
               <span className="data-text03">1.</span>
@@ -68,6 +70,8 @@ const Data = (props) => {
             <svg viewBox="0 0 1024 1024" className="data-icon2">
               <path d="M960 0h64v736c0 88.366-100.29 160-224 160s-224-71.634-224-160c0-88.368 100.29-160 224-160 62.684 0 119.342 18.4 160 48.040v-368.040l-512 113.778v494.222c0 88.366-100.288 160-224 160s-224-71.634-224-160c0-88.368 100.288-160 224-160 62.684 0 119.342 18.4 160 48.040v-624.040l576-128z"></path>
             </svg>
+            //NOTE FOR NITYA: this is the most listened to songs section
+            //put the songs next to the numbers (1., 2., 3., etc)
             <span className="data-text33">Most Listened to Songs</span>
             <span className="data-text34">
               <span className="data-text35">1.</span>
@@ -118,6 +122,8 @@ const Data = (props) => {
             <svg viewBox="0 0 1024 1024" className="data-icon4">
               <path d="M534 298v224l192 114-32 54-224-136v-256h64zM512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125z"></path>
             </svg>
+            //NOTE FOR NITYA: this is the time spent listening section
+            //put the time next to the times (hours, minutes, seconds)
             <span className="data-text65">Time Spent Listening</span>
             <span className="data-text66">
               <span>hours:</span>

@@ -19,6 +19,7 @@ const Login = (props) => {
         src="/external/pastedimage-l58o-1300w.png"
         className="login-pasted-image"
       />
+      //NOTE FOR VASUDHA: make the get-started button the login button to connect to your stuff
       <div className="login-get-started">
         <span className="login-text">
           <span>Link Your Spotify Account,</span>
