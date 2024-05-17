@@ -40,7 +40,7 @@ const generateRandomString = length => {
     const state = generateRandomString(16);
     res.cookie(stateKey, state);
   
-    const scope = 'user-read-private user-read-email';
+    const scope = 'user-read-private user-read-email ugc-image-upload user-follow-read';
   
     const queryParams = querystring.stringify({
       client_id: CLIENT_ID,
