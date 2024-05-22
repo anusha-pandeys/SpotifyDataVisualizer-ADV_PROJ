@@ -1,4 +1,9 @@
 import axios from 'axios';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 
 // Map for localStorage keys
 const LOCALSTORAGE_KEYS = {
