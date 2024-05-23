@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { accessToken, logout, getCurrentUserProfile } from './spotify';
 //import './App.css';
 import { catchErrors } from './util'; //excluded since async doesn't work
-import styled from 'styled-components/native';
+import {styled} from 'styled-components';
 import variables from './styles/variables.js';
 
 
@@ -15,8 +15,9 @@ import {
 } from 'react-router-dom';
 import { GlobalStyle } from './styles'; //import { GlobalStyle, OtherStyledComponent } from './styles';
 
+//added 'a' since it's still an anchor link
 
-const StyledLoginButton = styled.a` //added 'a' since it's still an anchor link ``
+const StyledLoginButton = styled.a` 
   background-color: var(--green);
   color: var(--white);
   padding: 10px 20px;
