@@ -24,6 +24,8 @@ const Playlists = () => {
       return;
     }
 
+    
+
     // Playlist endpoint only returns 20 playlists at a time, so we need to
     // make sure we get ALL playlists by fetching the next set of playlists
     const fetchMoreData = async () => {
@@ -36,10 +38,12 @@ const Playlists = () => {
     // Use functional update to update playlists state variable
     // to avoid including playlists as a dependency for this hook
     // and creating an infinite loop
-    setPlaylists(playlists => ([
-      ...playlists ? playlists : [],
-      ...playlistsData.items
-    ]));
+    setPlaylists(playlists => {
+      const newPlaylists = playlistsData.items.filter(newPlaylist => (
+        !playlists || !playlists.some(existingPlaylist => existingPlaylist.id === newPlaylist.id)
+      ));
+      return [...(playlists ? playlists : []), ...newPlaylists];
+    });
 
     // Fetch next set of playlists as needed
     catchErrors(fetchMoreData());
