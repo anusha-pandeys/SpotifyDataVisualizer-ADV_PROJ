@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { accessToken, getCurrentUserProfile, getCurrentUserPlaylists, getTopArtists } from '../spotify';
 import { StyledHeader } from '../styles';
 import blank_profile from './blank_profile.jpg'; 
+import { SectionWrapper, ArtistsGrid } from '../components';
 
 const Profile = () => {
   const [token, setToken] = useState(null);
@@ -77,6 +78,13 @@ const Profile = () => {
               </div>
             </div>
           </StyledHeader>
+          {topArtists && (
+            <main>
+              <SectionWrapper title="Top artists in the past 4 weeks:" seeAllLink="/top-artists">
+                <ArtistsGrid artists={topArtists.items.slice(0, 10)} />
+              </SectionWrapper>
+            </main>
+          )}
         </>
       )}
     </>
