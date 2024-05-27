@@ -4,11 +4,12 @@ import {
   getCurrentUserProfile,
   getCurrentUserPlaylists,
   getTopArtists,
-  getTopTracks
+  getTopTracks,
+  getAudioFeaturesForTracks
 } from '../spotify';
 import { StyledHeader } from '../styles';
 import blank_profile from './blank_profile.jpg'; 
-import { SectionWrapper, ArtistsGrid, TrackList, PlaylistsGrid, Loader } from '../components';
+import { SectionWrapper, ArtistsGrid, TrackList, PlaylistsGrid, Loader, GenrePlot } from '../components';
 
 /*
 For each component...
@@ -104,6 +105,10 @@ const Profile = () => {
 
                 <SectionWrapper title="Top tracks this month" seeAllLink="/top-tracks">
                   <TrackList tracks={topTracks.items.slice(0, 10)} />
+                </SectionWrapper>
+
+                <SectionWrapper title="Genre analysis">
+                  <GenrePlot> </GenrePlot>
                 </SectionWrapper>
 
                 <SectionWrapper title="Public Playlists" seeAllLink="/playlists">

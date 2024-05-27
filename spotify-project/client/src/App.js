@@ -69,9 +69,9 @@ function App() {
               <Routes>
               <Route path="/top-artists" element={<TopArtists />} />
               <Route path="/top-tracks" element={<TopTracks />} />
-                <Route path="/playlists/:id" element={<Playlist/>} />
-                <Route path="/playlists" element={<Playlists/>} />
-                <Route path="/" element={<Profile />} />
+              <Route path="/playlists/:id" element={<Playlist/>} />
+               <Route path="/playlists" element={<Playlists/>} />
+               <Route path="/" element={<Profile />} />
               </Routes>
             </Router>
           </>
