@@ -1,14 +1,29 @@
 import { useState, useEffect } from 'react';
-import { accessToken, getCurrentUserProfile, getCurrentUserPlaylists, getTopArtists } from '../spotify';
+import {
+  accessToken,
+  getCurrentUserProfile,
+  getCurrentUserPlaylists,
+  getTopArtists,
+  getTopTracks
+} from '../spotify';
 import { StyledHeader } from '../styles';
 import blank_profile from './blank_profile.jpg'; 
-import { SectionWrapper, ArtistsGrid } from '../components';
+import { SectionWrapper, ArtistsGrid, TrackList, PlaylistsGrid } from '../components';
+
+/*
+For each component...
+1. Add a function to client/src/spotify.js to hit a Spotify API endpoint with axios
+2. Create a new JS file for the component and and export it in client/src/components/index.js
+3. Add new Styled Components for the component as needed
+4. Import the component to client/src/pages/Profile.js and add it to the template
+*/
 
 const Profile = () => {
   const [token, setToken] = useState(null);
   const [profile, setProfile] = useState(null);
   const [playlists, setPlaylists] = useState(null);
   const [topArtists, setTopArtists] = useState(null);
+  const [topTracks, setTopTracks] = useState(null);
 
   useEffect(() => {
     // Set the token from the access token
@@ -24,6 +39,8 @@ const Profile = () => {
           setPlaylists(playlistsData);
           const {data: topArtistsData} = await getTopArtists();
           setTopArtists(topArtistsData);
+          const {data: topTracksData} = await getTopTracks();
+          setTopTracks(topTracksData);
         } catch (e) {
           console.error(e);
         }
@@ -33,7 +50,7 @@ const Profile = () => {
     }
   }, [token]);
 
-  console.log(topArtists);
+  console.log(topTracks);
 
 /*
     useEffect(() => {
@@ -78,10 +95,18 @@ const Profile = () => {
               </div>
             </div>
           </StyledHeader>
-          {topArtists && (
+          {topArtists && topTracks && playlists && (
             <main>
-              <SectionWrapper title="Top artists in the past 4 weeks:" seeAllLink="/top-artists">
+              <SectionWrapper title="Top artists this month" seeAllLink="/top-artists">
                 <ArtistsGrid artists={topArtists.items.slice(0, 10)} />
+              </SectionWrapper>
+
+              <SectionWrapper title="Top tracks this month" seeAllLink="/top-tracks">
+                <TrackList tracks={topTracks.items.slice(0, 10)} />
+              </SectionWrapper>
+
+              <SectionWrapper title="Playlists" seeAllLink="/playlists">
+                <PlaylistsGrid playlists={playlists.items.slice(0, 10)} />
               </SectionWrapper>
             </main>
           )}
