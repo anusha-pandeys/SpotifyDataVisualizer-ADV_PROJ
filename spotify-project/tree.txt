@@ -1,0 +1,78 @@
+ª   .env
+ª   .gitignore
+ª   .nvmrc
+ª   index.js
+ª   package-lock.json
+ª   package.json
+ª   Procfile
+ª   tree.txt
+ª   
++---client
+ª   ª   .babelrc
+ª   ª   .gitignore
+ª   ª   package-lock.json
+ª   ª   package.json
+ª   ª   README.md
+ª   ª   
+ª   +---node_modules
+ª   +---public
+ª   ª   ª   favicon.ico
+ª   ª   ª   index.html
+ª   ª   ª   logo192.png
+ª   ª   ª   logo512.png
+ª   ª   ª   manifest.json
+ª   ª   ª   robots.txt
+ª   ª   ª   
+ª   ª   +---favicons
+ª   ª           android-chrome-192x192.png
+ª   ª           android-chrome-512x512.png
+ª   ª           apple-touch-icon.png
+ª   ª           favicon-16x16.png
+ª   ª           favicon-32x32.png
+ª   ª           favicon.ico
+ª   ª           site.webmanifest
+ª   ª           
+ª   +---src
+ª       ª   App.css
+ª       ª   App.js
+ª       ª   App.test.js
+ª       ª   index.css
+ª       ª   index.js
+ª       ª   logo.svg
+ª       ª   reportWebVitals.js
+ª       ª   setupTests.js
+ª       ª   spotify.js
+ª       ª   util.js
+ª       ª   
+ª       +---components
+ª       ª       ArtistsGrid.js
+ª       ª       index.js
+ª       ª       Loader.js
+ª       ª       PlaylistsGrid.js
+ª       ª       SectionWrapper.js
+ª       ª       TimeRangeButtons.js
+ª       ª       TrackList.js
+ª       ª       
+ª       +---pages
+ª       ª       blank_profile.jpg
+ª       ª       index.js
+ª       ª       Login.js
+ª       ª       Playlist.js
+ª       ª       Playlists.js
+ª       ª       Profile.js
+ª       ª       TopArtists.js
+ª       ª       TopTracks.js
+ª       ª       
+ª       +---styles
+ª               fonts.js
+ª               GlobalStyle.js
+ª               index.js
+ª               StyledDropdown.js
+ª               StyledGrid.js
+ª               StyledHeader.js
+ª               StyledRangeButtons.js
+ª               StyledSection.js
+ª               StyledTrackList.js
+ª               variables.js
+ª               
++---node_modules
