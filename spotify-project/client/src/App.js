@@ -5,7 +5,7 @@ import { accessToken, logout, getCurrentUserProfile } from './spotify';
 import { catchErrors } from './util'; //excluded since async doesn't work
 import {styled} from 'styled-components';
 import variables from './styles/variables.js';
-import { Login, Profile } from './pages';
+import { Login, Profile, TopArtists, TopTracks} from './pages';
 
 
 import {
@@ -67,8 +67,8 @@ function App() {
             <Router>
               <ScrollToTop />
               <Routes>
-                <Route path="/top-artists" element={<h1>Top Artists</h1>} />
-                <Route path="/top-tracks" element={<h1>Top Tracks</h1>} />
+              <Route path="/top-artists" element={<TopArtists />} />
+              <Route path="/top-tracks" element={<TopTracks />} />
                 <Route path="/playlists/:id" element={<h1>Playlist</h1>} />
                 <Route path="/playlists" element={<h1>Playlists</h1>} />
                 <Route path="/" element={<Profile />} />
