@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { accessToken, getCurrentUserProfile, getCurrentUserPlaylists } from '../spotify';
+import { accessToken, getCurrentUserProfile, getCurrentUserPlaylists, getTopArtists } from '../spotify';
 import { StyledHeader } from '../styles';
 import blank_profile from './blank_profile.jpg'; 
 
@@ -7,6 +7,7 @@ const Profile = () => {
   const [token, setToken] = useState(null);
   const [profile, setProfile] = useState(null);
   const [playlists, setPlaylists] = useState(null);
+  const [topArtists, setTopArtists] = useState(null);
 
   useEffect(() => {
     // Set the token from the access token
@@ -20,6 +21,8 @@ const Profile = () => {
           setProfile(profileData);
           const { data: playlistsData } = await getCurrentUserPlaylists();
           setPlaylists(playlistsData);
+          const {data: topArtistsData} = await getTopArtists();
+          setTopArtists(topArtistsData);
         } catch (e) {
           console.error(e);
         }
@@ -28,6 +31,8 @@ const Profile = () => {
       fetchData();
     }
   }, [token]);
+
+  console.log(topArtists);
 
 /*
     useEffect(() => {
@@ -38,6 +43,9 @@ const Profile = () => {
   
         const userPlaylists = await getCurrentUserPlaylists();
         setPlaylists(userPlaylists.data);
+
+        const userTopArtist = await getTopArtists();
+        setTopArtists(userTopArtist.data);
       };
   
       catchErrors(fetchData());
