@@ -8,7 +8,7 @@ import {
 } from '../spotify';
 import { StyledHeader } from '../styles';
 import blank_profile from './blank_profile.jpg'; 
-import { SectionWrapper, ArtistsGrid, TrackList, PlaylistsGrid } from '../components';
+import { SectionWrapper, ArtistsGrid, TrackList, PlaylistsGrid, Loader } from '../components';
 
 /*
 For each component...
@@ -95,21 +95,25 @@ const Profile = () => {
               </div>
             </div>
           </StyledHeader>
-          {topArtists && topTracks && playlists && (
-            <main>
-              <SectionWrapper title="Top artists this month" seeAllLink="/top-artists">
-                <ArtistsGrid artists={topArtists.items.slice(0, 10)} />
-              </SectionWrapper>
+          <main>
+            {topArtists && topTracks && playlists ? (
+              <>
+                <SectionWrapper title="Top artists this month" seeAllLink="/top-artists">
+                  <ArtistsGrid artists={topArtists.items.slice(0, 10)} />
+                </SectionWrapper>
 
-              <SectionWrapper title="Top tracks this month" seeAllLink="/top-tracks">
-                <TrackList tracks={topTracks.items.slice(0, 10)} />
-              </SectionWrapper>
+                <SectionWrapper title="Top tracks this month" seeAllLink="/top-tracks">
+                  <TrackList tracks={topTracks.items.slice(0, 10)} />
+                </SectionWrapper>
 
-              <SectionWrapper title="Playlists" seeAllLink="/playlists">
-                <PlaylistsGrid playlists={playlists.items.slice(0, 10)} />
-              </SectionWrapper>
-            </main>
-          )}
+                <SectionWrapper title="Public Playlists" seeAllLink="/playlists">
+                  <PlaylistsGrid playlists={playlists.items.slice(0, 10)} />
+                </SectionWrapper>
+              </>
+            ) : (
+              <Loader />
+            )}
+          </main>
         </>
       )}
     </>
