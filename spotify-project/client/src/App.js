@@ -55,36 +55,7 @@ function App() {
     // Set the token from the access token
     setToken(accessToken);
   }, []);
-  /*
 
-    // Fetch profile data if the token is available
-    if (accessToken) {
-      const fetchData = async () => {
-        try {
-          const { data } = await getCurrentUserProfile();
-          setProfile(data);
-        } catch (e) {
-          console.error(e);
-        }
-      };
-
-      fetchData();
-    }
-  }, [token]); // Depend on `token` so it re-runs when `token` changes
-  */
-  
- /*
-  useEffect(() => {
-    setToken(accessToken);
-
-    const fetchData = async () => {
-      const { data } = await getCurrentUserProfile();
-      setProfile(data);
-    };
-
-    catchErrors(fetchData());
-  }, []);
-  */
   return (
     <div className="App">
       <GlobalStyle />
