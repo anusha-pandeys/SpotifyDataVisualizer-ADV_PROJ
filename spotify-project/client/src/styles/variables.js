@@ -2,13 +2,13 @@ import { css } from 'styled-components/native';
 
 const variables = css`
   :root {
-    --black: #121212;
-    --near-black: #181818;
-    --dark-grey: #282828;
-    --grey: #535353;
-    --light-grey: #b3b3b3;
+    --black: #676D79;
+    --near-black: #50545C;
+    --dark-grey: #F2BAD0;
+    --grey: #FFD6DF;
+    --light-grey: #FFE8E1;
     --white: #ffffff;
-    --green: #1DB954;
+    --green: #D5DECF;
 
     --font: 'Circular Std', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 
