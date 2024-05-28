@@ -51,7 +51,6 @@ const Profile = () => {
     }
   }, [token]);
 
-  console.log(topTracks);
 
 /*
     useEffect(() => {
